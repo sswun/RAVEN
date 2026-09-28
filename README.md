@@ -36,7 +36,7 @@ This repository contains the reference implementation of both ways we solve the 
 - **Navigation.** Ahead of SLIM, NDQ, CACOM and ExpoComm on two-agent navigation, 3- and 4-agent rings and
   one-to-many broadcast; on N1-C2 better than all five external methods on 5/5 seeds each.
 - **Mechanism.** Removing the receiver's situation from the target loses 83% of the communication gain (10 seeds).
-- **Scale.** 87.4% win rate on the super-hard SMAC map MMM2 with 10 agents (QMIX reference: 57.8%).
+- **Scale.** 87.4% win rate on the super-hard SMAC map MMM2 with 10 agents (QMIX 57.8%, best listed baseline 66.5%).
 - **Communication pays.** +42.8 percentage points capture success over a same-backbone QMIX without messages.
 - **Cost.** 2 bits per message; 5,257 deployed parameters on speaker–listener (SLIM: 264,005).
 
@@ -150,21 +150,27 @@ significant after Holm correction, with all 10 seeds in the same direction.
 
 ### SMAC and MPE (online implementation)
 
-Win rate (%) on SMAC and team return on MPE, mean ± s.d. over four training seeds, 2.05M environment steps per
-seed, one shared set of hyperparameters. Every agent broadcasts 2 bits per step; each receiver attends to two
-senders.
+Win rate (%) on SMAC and team return on MPE after 2.05M environment steps per seed, with one shared set of
+hyperparameters. RAVEN: mean (± s.d.) over four training seeds; every agent broadcasts 2 bits per step and each
+receiver attends to two senders.
 
-| Task | Metric | **RAVEN** (mean ± s.d.) | QMIX<sup>†</sup> | QPLEX<sup>†</sup> |
-|:--|:--|--:|--:|--:|
-| SMAC MMM | win rate (%) | **99.95 ± 0.10** | 98.60 | 30.75 |
-| SMAC MMM2 (super hard) | win rate (%) | **87.35 ± 8.30** | 57.80 | 62.00 |
-| SMAC 3s5z | win rate (%) | **96.75 ± 1.52** | 86.40 | 96.50 |
-| MPE Spread | team return | **−28.99 ± 0.68** | −43.42 | −31.57 |
-| MPE Tag | team return | **278.02 ± 2.94** | 23.39 | 235.09 |
-| MPE Crypto | team return | **48.03 ± 0.04** | 0.38 | 45.44 |
+| Method | MMM | MMM2 (super hard) | 3s5z | Spread | Tag | Crypto |
+|:--|--:|--:|--:|--:|--:|--:|
+| **RAVEN (ours)** | **99.95**<br><sub>±0.10</sub> | **87.35**<br><sub>±8.30</sub> | **96.75**<br><sub>±1.52</sub> | **−28.99**<br><sub>±0.68</sub> | **278.02**<br><sub>±2.94</sub> | **48.03**<br><sub>±0.04</sub> |
+| QMIX | 98.60 | 57.80 | 86.40 | −43.42 | 23.39 | 0.38 |
+| QMIX (large) | 96.88 | 26.91 | 94.91 | −44.17 | −46.04 | 21.69 |
+| OW-QMIX | 98.00 | 38.75 | 89.60 | −51.50 | −51.09 | 8.70 |
+| CW-QMIX | 96.00 | 2.25 | 80.50 | −49.39 | −22.87 | 47.21 |
+| QPLEX | 30.75 | 62.00 | 96.50 | −31.57 | 235.09 | 45.44 |
+| RODE | 98.00 | 14.00 | 63.00 | −60.18 | 106.90 | 7.25 |
+| ROCO | 97.25 | 30.25 | 94.00 | −77.83 | 95.39 | 21.89 |
+| QMIX + TeamComm | 98.00 | 64.25 | 91.00 | −43.73 | 68.56 | 48.00 |
+| QMIX + TGCNet | 74.00 | 66.50 | **96.75** | −44.95 | 55.46 | 48.00 |
 
-<sup>†</sup> reference runs with the same 2.05M-step budget from our own earlier experiments; their sampling
-and evaluation protocol differs, so they serve as a scale reference rather than a paired comparison.
+Baselines are selected reference runs from our earlier experiments with the same 2.05M-step budget (the last
+evaluation before 2.05M steps). Their sampling, number of evaluation episodes and number of seeds differ from
+RAVEN's protocol, so they serve as a scale reference rather than a paired comparison. CACOM and ExpoComm are
+compared on navigation above, using their authors' full implementations.
 
 **The gain comes from communication.** Against a QMIX learner with *exactly the same backbone* (same GRU,
 optimiser, learning rate, replay, exploration schedule, budget and per-seed initialisation, with the codec,
