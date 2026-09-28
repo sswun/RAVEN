@@ -1,0 +1,38 @@
+# Offline RAVEN on two-agent reference navigation (N1-C2, equivalent to MPE simple_reference).
+seed: 1
+n_agents: 2
+n_symbols: 4                 # K = 4, 2 bits per message
+
+teacher:
+  head: joint                # 22 -> 128 -> 128 -> 25 joint action values
+  steps: 1200000
+  parallel_envs: 16
+  warmup: 5000
+  batch_size: 512
+  replay: 200000
+  lr: 3.0e-4
+  gamma: 0.95
+  target_every: 1000
+  epsilon_decay_steps: 600000
+  epsilon_final: 0.05
+  heuristic_steps: 20000     # scripted exploration with 20% random actions
+  checkpoints: [0, 100000, 300000, 600000, 1200000]
+  selection_episodes: 200    # held-out episodes used to pick the teacher checkpoint
+  construction_rows: 10000   # first 10k transitions + 10k from the final replay
+
+construction:
+  n_types: 12                # sender types
+  n_conditions: 12           # receiver conditions
+  shrinkage: 32
+  ridge: 0.05
+  condition: sensitivity     # sensitivity | geometry | full_local | unconditional
+
+policy:
+  sender_updates: 2048
+  receiver_updates: 8192
+  batch_size: 512
+  lr: 3.0e-3
+  grad_clip: 5.0
+
+evaluation:
+  episodes: 1000

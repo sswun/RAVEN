@@ -1,0 +1,91 @@
+RAVEN Academic Non-Commercial License
+Version 1.0
+
+Copyright (c) 2026 Shuwei Sun. All rights reserved except as expressly
+granted below.
+
+This license applies to the source code, configuration files, documentation
+and figures in this repository (the "Software"), except for third-party
+material identified in the NOTICE file, which remains under its own license.
+
+1. Definitions
+
+   "Licensor" means the copyright holder named above.
+
+   "You" means the individual or legal entity exercising rights under this
+   license.
+
+   "Non-Commercial Research Purpose" means academic research, teaching,
+   personal study, or scientific evaluation carried out by or for a
+   university, a public research institution or an individual, where neither
+   the use nor its results are intended for commercial advantage or monetary
+   compensation. It does not include use in or for a product or service,
+   commercial research and development, consulting, or any use by or on
+   behalf of a for-profit entity.
+
+2. License grant
+
+   Subject to the terms of this license, the Licensor grants You a worldwide,
+   royalty-free, non-exclusive, non-transferable, non-sublicensable license to
+   use, reproduce and modify the Software, solely for Non-Commercial Research
+   Purposes.
+
+3. Redistribution
+
+   (a) You may redistribute verbatim copies of the Software, free of charge,
+       provided that this license, the NOTICE file and all copyright notices
+       are included unchanged.
+
+   (b) You may not distribute, publish or make available modified versions of
+       the Software or works derived from it, including ports to other
+       languages or frameworks, without the prior written permission of the
+       Licensor. Modified versions kept for Your own Non-Commercial Research
+       Purposes are permitted. Contributions submitted to the official
+       repository are not restricted by this paragraph.
+
+4. Attribution and citation
+
+   (a) Any publication, preprint, thesis, report, presentation or software
+       that uses the Software, is based on the Software, or reports results
+       obtained with it must cite the reference given in CITATION.cff (or the
+       associated paper once published).
+
+   (b) You may not remove or alter copyright, license or attribution notices,
+       and You may not present the Software, or the methods it implements, as
+       Your own work.
+
+5. Commercial use
+
+   Any use not covered by Section 2, including any commercial use, requires a
+   separate written license from the Licensor.
+
+6. Patents and other rights
+
+   No patent license, express or implied, is granted by this license. The
+   Licensor reserves all rights not expressly granted, including all patent
+   rights in the methods implemented by the Software. No right to use the
+   names or marks of the Licensor or of any contributor is granted.
+
+7. Data and models
+
+   Training data, experimental records, logs and trained model weights are
+   not part of the Software and are not licensed under this license.
+
+8. Termination
+
+   This license terminates automatically if You breach any of its terms. Upon
+   termination You must stop using the Software and destroy all copies in
+   Your possession. Sections 6, 9 and 10 survive termination.
+
+9. Disclaimer of warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
+
+10. Limitation of liability
+
+   IN NO EVENT SHALL THE LICENSOR OR ANY CONTRIBUTOR BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.

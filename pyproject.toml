@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "raven-comm"
+version = "1.0.0"
+description = "RAVEN: Receiver-conditioned Action-Value ENcoding for finite-symbol multi-agent communication"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.1",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+mpe = ["mpe2>=1.1", "pettingzoo>=1.24"]
+smac = ["smac @ git+https://github.com/oxwhirl/smac.git"]
+dev = ["pytest>=7", "ruff>=0.4", "mpe2>=1.1"]
+
+[tool.setuptools.packages.find]
+include = ["raven*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

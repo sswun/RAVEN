@@ -1,0 +1,21 @@
+# outputs of training scripts
+runs/
+*.pt
+*.npy
+*.npz
+metrics.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+.venv/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store

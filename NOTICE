@@ -1,0 +1,19 @@
+RAVEN
+Copyright (c) 2026 Shuwei Sun
+
+The Software is licensed under the RAVEN Academic Non-Commercial License,
+Version 1.0 (see LICENSE), with the following exception.
+
+Third-party material
+--------------------
+
+raven/online/networks.py -- the classes RNNAgent and QMixer are adapted from
+PyMARL (https://github.com/oxwhirl/pymarl), which is licensed under the
+Apache License, Version 2.0. These portions remain available under the Apache
+License 2.0; a copy is provided in licenses/Apache-2.0.txt. They were
+modified (interfaces, reshaping and removal of unused options).
+
+Dependencies that are not redistributed here keep their own licenses, among
+them PyTorch (BSD-3-Clause), NumPy (BSD-3-Clause), PyYAML (MIT), MPE2 /
+PettingZoo (MIT) and SMAC (MIT). StarCraft II is subject to the Blizzard
+AI and Machine Learning License.

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "RAVEN: Receiver-conditioned Action-Value ENcoding for Finite-Symbol Multi-Agent Communication"
+type: software
+repository-code: "https://github.com/sswun/RAVEN"
+version: 1.0.0
+date-released: 2026-09-28
+authors:
+  - family-names: Sun
+    given-names: Shuwei
+    orcid: "https://orcid.org/0009-0009-4809-8557"
+abstract: >-
+  RAVEN is a communication method for cooperative multi-agent reinforcement
+  learning with a finite alphabet (four symbols, two bits per message) and a
+  one-step message delay. A sender's symbol is chosen so that, inside the
+  receiver's own decision context, the receiver's centred action-value profile
+  matches the profile it would have with the sender's full information. The
+  objective is solved offline by exact codebook construction from a
+  centralised teacher, or online by aligning a deployed symbol branch with a
+  continuous reference branch in a value-decomposition learner.
+keywords:
+  - multi-agent reinforcement learning
+  - emergent communication
+  - discrete communication
+  - value decomposition
+  - bandwidth-limited communication

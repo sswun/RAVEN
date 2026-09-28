@@ -1,0 +1,36 @@
+# Online RAVEN on SMAC maps (e.g. MMM, MMM2, 3s5z).
+seed: 1
+task:
+  kind: smac
+  name: MMM2
+  args: {}          # extra StarCraft2Env arguments, e.g. {difficulty: "7"}
+
+model:
+  variant: full     # full | no_cv | no_reference | no_comm (same-backbone QMIX)
+  hidden_dim: 64
+  n_symbols: 4      # 2 bits per message
+  top_k: 2          # senders read by each receiver
+  key_dim: 32
+  topology: all
+  lr: 5.0e-4        # local network and mixer
+  comm_lr: 3.0e-4   # codec and receiver
+  gamma: 0.99
+  cv_coef: 0.1
+  probe_states: 8
+  target_update_interval: 200
+  grad_clip: 10.0
+  mixing_embed_dim: 32
+  hypernet_dim: 64
+  standardise_rewards: true
+  epsilon_start: 1.0
+  epsilon_finish: 0.05
+  epsilon_anneal_steps: 50000
+
+training:
+  t_max: 2050000
+  batch_size: 32          # episodes per update
+  buffer_size: 5000       # episodes
+  eval_interval: 50000
+  eval_episodes: 100
+  final_eval_episodes: 1000
+  log_interval: 10000
