@@ -3,12 +3,37 @@ message: "If you use this software, please cite it as below."
 title: "RAVEN: Receiver-conditioned Action-Value ENcoding for Finite-Symbol Multi-Agent Communication"
 type: software
 repository-code: "https://github.com/sswun/RAVEN"
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-09-28
 authors:
   - family-names: Sun
     given-names: Shuwei
+    affiliation: "Xi'an Jiaotong University"
     orcid: "https://orcid.org/0009-0009-4809-8557"
+  - family-names: Wang
+    given-names: Chenxi
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0009-0006-2544-5526"
+  - family-names: Huang
+    given-names: Jian
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0009-0007-8958-5736"
+  - family-names: Ru
+    given-names: Weiyun
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0009-0007-7650-8555"
+  - family-names: Cao
+    given-names: Hui
+    affiliation: "Xi'an Jiaotong University"
+    orcid: "https://orcid.org/0000-0002-4985-0028"
+doi: 10.5281/zenodo.23008933
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23008933
+    description: All versions
+  - type: doi
+    value: 10.5281/zenodo.23008934
+    description: Version 1.0.0
 abstract: >-
   RAVEN is a communication method for cooperative multi-agent reinforcement
   learning with a finite alphabet (four symbols, two bits per message) and a

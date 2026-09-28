@@ -7,9 +7,10 @@
 [![License](https://img.shields.io/badge/license-Academic%20Non--Commercial-c0392b)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-2a78d6)](pyproject.toml)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-ee4c2c)](https://pytorch.org)
-[![DOI](https://img.shields.io/badge/DOI-to%20be%20assigned-lightgrey)](#citation)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23008933.svg)](https://doi.org/10.5281/zenodo.23008933)
 
-[Shuwei Sun](https://github.com/sswun) &nbsp;·&nbsp; [ORCID 0009-0009-4809-8557](https://orcid.org/0009-0009-4809-8557)
+[Shuwei Sun](https://orcid.org/0009-0009-4809-8557) &nbsp;·&nbsp; [Chenxi Wang](https://orcid.org/0009-0006-2544-5526) &nbsp;·&nbsp; [Jian Huang](https://orcid.org/0009-0007-8958-5736) &nbsp;·&nbsp; [Weiyun Ru](https://orcid.org/0009-0007-7650-8555) &nbsp;·&nbsp; [Hui Cao](https://orcid.org/0000-0002-4985-0028)<br>
+Xi'an Jiaotong University
 
 **2 bits per message &nbsp;·&nbsp; one communication round &nbsp;·&nbsp; symbols chosen for what the receiver has to decide**
 
@@ -294,13 +295,17 @@ If you use RAVEN or this code, please cite:
 
 ```bibtex
 @software{sun2026raven,
-  author  = {Sun, Shuwei},
-  title   = {{RAVEN}: Receiver-conditioned Action-Value {EN}coding for Finite-Symbol Multi-Agent Communication},
-  year    = {2026},
-  version = {1.0.0},
-  note    = {Software release. DOI to be assigned by Zenodo}
+  author    = {Sun, Shuwei and Wang, Chenxi and Huang, Jian and Ru, Weiyun and Cao, Hui},
+  title     = {{RAVEN}: Receiver-conditioned Action-Value {EN}coding for Finite-Symbol Multi-Agent Communication},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23008933},
+  url       = {https://doi.org/10.5281/zenodo.23008933}
 }
 ```
+
+The DOI above always resolves to the latest version; version 1.0.0 is archived as
+[10.5281/zenodo.23008934](https://doi.org/10.5281/zenodo.23008934).
 
 The paper describing the method will be linked here once it is publicly available.
 
@@ -311,7 +316,7 @@ the code for non-commercial research and teaching; publications that use it must
 not be redistributed without permission; commercial use requires a separate license; no patent rights are
 granted. This is not an OSI-approved open-source license. Parts of `raven/online/networks.py` are adapted from
 PyMARL and remain under the Apache License 2.0 (see [NOTICE](NOTICE)). For commercial licensing, please contact
-the author through [GitHub](https://github.com/sswun).
+the authors through [GitHub](https://github.com/sswun).
 
 ## Acknowledgements
 

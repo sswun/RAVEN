@@ -1,11 +1,32 @@
 {
   "title": "RAVEN: Receiver-conditioned Action-Value ENcoding for Finite-Symbol Multi-Agent Communication",
   "upload_type": "software",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "creators": [
     {
       "name": "Sun, Shuwei",
+      "affiliation": "Xi'an Jiaotong University",
       "orcid": "0009-0009-4809-8557"
+    },
+    {
+      "name": "Wang, Chenxi",
+      "affiliation": "Xi'an Jiaotong University",
+      "orcid": "0009-0006-2544-5526"
+    },
+    {
+      "name": "Huang, Jian",
+      "affiliation": "Xi'an Jiaotong University",
+      "orcid": "0009-0007-8958-5736"
+    },
+    {
+      "name": "Ru, Weiyun",
+      "affiliation": "Xi'an Jiaotong University",
+      "orcid": "0009-0007-7650-8555"
+    },
+    {
+      "name": "Cao, Hui",
+      "affiliation": "Xi'an Jiaotong University",
+      "orcid": "0000-0002-4985-0028"
     }
   ],
   "description": "Reference implementation of RAVEN, a finite-symbol (K = 4, 2 bits per message) communication method for cooperative multi-agent reinforcement learning. A sender's symbol is chosen so that, in the receiver's own decision context, the receiver's centred action-value profile matches the one it would have with full information. The release contains the offline implementation (centralised teacher, sensitivity-weighted receiver conditions, exact codebook search, distilled sender and receivers) and the online implementation (GRU agents with QMIX, hard-symbol codec, top-2 sparse receiver, conditional value alignment loss), together with task adapters for ring and broadcast navigation, MPE2 and SMAC. Training data, experiment records and trained weights are not included. Licensed under the RAVEN Academic Non-Commercial License 1.0 (see the LICENSE file); not an open-source license.",

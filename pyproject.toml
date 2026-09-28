@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "raven-comm"
-version = "1.0.0"
+version = "1.0.1"
 description = "RAVEN: Receiver-conditioned Action-Value ENcoding for finite-symbol multi-agent communication"
 readme = "README.md"
 license = { file = "LICENSE" }
