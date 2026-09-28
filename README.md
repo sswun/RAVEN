@@ -304,8 +304,9 @@ If you use RAVEN or this code, please cite:
 }
 ```
 
-The DOI above always resolves to the latest version; version 1.0.0 is archived as
-[10.5281/zenodo.23008934](https://doi.org/10.5281/zenodo.23008934).
+The DOI above always resolves to the latest version. Individual versions:
+v1.0.1 [10.5281/zenodo.23011851](https://doi.org/10.5281/zenodo.23011851),
+v1.0.0 [10.5281/zenodo.23008934](https://doi.org/10.5281/zenodo.23008934).
 
 The paper describing the method will be linked here once it is publicly available.
 
