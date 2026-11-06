@@ -299,12 +299,13 @@ For authorized uses, please cite RAVEN.
   title     = {{RAVEN}: Receiver-conditioned Action-Value {EN}coding for Finite-Symbol Multi-Agent Communication},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.23008933},
-  url       = {https://doi.org/10.5281/zenodo.23008933}
+  version   = {1.1.0},
+  doi       = {10.5281/zenodo.23999755},
+  url       = {https://doi.org/10.5281/zenodo.23999755}
 }
 ```
 
-The DOI above always resolves to the latest version. Individual versions:
+The citation identifies the [v1.1.0 archive](https://doi.org/10.5281/zenodo.23999755). The [all-versions DOI](https://doi.org/10.5281/zenodo.23008933) follows the latest release. Earlier archives:
 v1.0.1 [10.5281/zenodo.23011851](https://doi.org/10.5281/zenodo.23011851),
 v1.0.0 [10.5281/zenodo.23008934](https://doi.org/10.5281/zenodo.23008934).
 
