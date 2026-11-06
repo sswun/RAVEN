@@ -4,9 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "raven-comm"
-version = "1.0.1"
+version = "1.1.0"
 description = "RAVEN: Receiver-conditioned Action-Value ENcoding for finite-symbol multi-agent communication"
 readme = "README.md"
+authors = [
+    { name = "Shuwei Sun" },
+    { name = "Chenxi Wang" },
+    { name = "Jian Huang" },
+    { name = "Weiyun Ru" },
+    { name = "Hui Cao" },
+]
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 dependencies = [
@@ -19,6 +26,9 @@ dependencies = [
 mpe = ["mpe2>=1.1", "pettingzoo>=1.24"]
 smac = ["smac @ git+https://github.com/oxwhirl/smac.git"]
 dev = ["pytest>=7", "ruff>=0.4", "mpe2>=1.1"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "NOTICE", "licenses/Apache-2.0.txt"]
 
 [tool.setuptools.packages.find]
 include = ["raven*"]

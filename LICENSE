@@ -1,91 +1,55 @@
-RAVEN Academic Non-Commercial License
-Version 1.0
-
+RAVEN Permission Terms, version 1.0
+Effective for RAVEN v1.1.0, published on 6 November 2026.
 Copyright (c) 2026 Shuwei Sun, Chenxi Wang, Jian Huang, Weiyun Ru and Hui Cao.
-All rights reserved except as expressly granted below.
+All rights reserved.
 
-This license applies to the source code, configuration files, documentation
-and figures in this repository (the "Software"), except for third-party
-material identified in the NOTICE file, which remains under its own license.
+1. Materials covered
 
-1. Definitions
+These terms apply to the authors' original RAVEN source code, configuration
+files, scripts, documentation, figures, result tables and compilations of
+reported experimental results, to the extent the authors hold rights in them.
+The authors are the rights holders named above, acting jointly or through
+an authorized representative. Section 5 identifies third-party exceptions.
 
-   "Licensor" means the copyright holders named above, acting jointly.
+2. Prior written permission
 
-   "You" means the individual or legal entity exercising rights under this
-   license.
+Contact the authors and obtain their express written permission before using
+the original code or experimental results. This includes academic research,
+teaching, personal study, scientific evaluation, replication, benchmarking
+and commercial use. Permission is required to copy, run, modify, integrate,
+redistribute or publish covered materials, including reproducing their figures
+or result tables in another work, subject to section 5.
 
-   "Non-Commercial Research Purpose" means academic research, teaching,
-   personal study, or scientific evaluation carried out by or for a
-   university, a public research institution or an individual, where neither
-   the use nor its results are intended for commercial advantage or monetary
-   compensation. It does not include use in or for a product or service,
-   commercial research and development, consulting, or any use by or on
-   behalf of a for-profit entity.
+3. Requests and scope
 
-2. License grant
+Contact Shuwei Sun (@sswun) through the repository's issue tracker:
+https://github.com/sswun/RAVEN/issues/new
+Describe the materials, intended use and any planned publication or sharing.
+Use may begin only after express written approval from the authors and only
+for the recipient, scope and purpose specified in that approval. Further uses
+require separate written approval. A request, silence or citation alone does
+not confer permission. Authorized users must retain all applicable copyright,
+license and attribution notices and cite RAVEN as described in CITATION.cff.
 
-   Subject to the terms of this license, the Licensor grants You a worldwide,
-   royalty-free, non-exclusive, non-transferable, non-sublicensable license to
-   use, reproduce and modify the Software, solely for Non-Commercial Research
-   Purposes.
+4. Earlier releases
 
-3. Redistribution
+These terms apply prospectively to versions distributed with this LICENSE.
+The license shipped with each earlier release governs the materials obtained
+under that release. Previously granted rights remain subject to their terms.
 
-   (a) You may redistribute verbatim copies of the Software, free of charge,
-       provided that this license, the NOTICE file and all copyright notices
-       are included unchanged.
+5. Platform, third-party and statutory rights
 
-   (b) You may not distribute, publish or make available modified versions of
-       the Software or works derived from it, including ports to other
-       languages or frameworks, without the prior written permission of the
-       Licensor. Modified versions kept for Your own Non-Commercial Research
-       Purposes are permitted. Contributions submitted to the official
-       repository are not restricted by this paragraph.
+GitHub and its users retain the rights granted under GitHub's Terms of Service,
+including viewing and forking a public repository within GitHub. Applicable
+statutory rights and exceptions are preserved. The PyMARL-derived RNNAgent and
+QMixer portions of raven/online/networks.py remain under the Apache License,
+Version 2.0. See NOTICE and licenses/Apache-2.0.txt. Other third-party rights
+holders set the terms for their own materials. The authors reserve all other
+rights in their original materials, including patent and trademark rights.
 
-4. Attribution and citation
+6. Warranty and liability
 
-   (a) Any publication, preprint, thesis, report, presentation or software
-       that uses the Software, is based on the Software, or reports results
-       obtained with it must cite the reference given in CITATION.cff (or the
-       associated paper once published).
-
-   (b) You may not remove or alter copyright, license or attribution notices,
-       and You may not present the Software, or the methods it implements, as
-       Your own work.
-
-5. Commercial use
-
-   Any use not covered by Section 2, including any commercial use, requires a
-   separate written license from the Licensor.
-
-6. Patents and other rights
-
-   No patent license, express or implied, is granted by this license. The
-   Licensor reserves all rights not expressly granted, including all patent
-   rights in the methods implemented by the Software. No right to use the
-   names or marks of the Licensor or of any contributor is granted.
-
-7. Data and models
-
-   Training data, experimental records, logs and trained model weights are
-   not part of the Software and are not licensed under this license.
-
-8. Termination
-
-   This license terminates automatically if You breach any of its terms. Upon
-   termination You must stop using the Software and destroy all copies in
-   Your possession. Sections 6, 9 and 10 survive termination.
-
-9. Disclaimer of warranty
-
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
-
-10. Limitation of liability
-
-   IN NO EVENT SHALL THE LICENSOR OR ANY CONTRIBUTOR BE LIABLE FOR ANY CLAIM,
-   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-   USE OR OTHER DEALINGS IN THE SOFTWARE.
+The materials are provided as is. To the extent permitted by law, the authors
+disclaim all warranties, including merchantability, fitness for a particular
+purpose and noninfringement, and all liability for loss or damage arising
+from the materials or their use.

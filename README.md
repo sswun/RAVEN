@@ -4,7 +4,7 @@
 
 ### Receiver-conditioned Action-Value ENcoding for Finite-Symbol Multi-Agent Communication
 
-[![License](https://img.shields.io/badge/license-Academic%20Non--Commercial-c0392b)](LICENSE)
+[![License](https://img.shields.io/badge/license-Permission%20Required-c0392b)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-2a78d6)](pyproject.toml)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-ee4c2c)](https://pytorch.org)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23008933.svg)](https://doi.org/10.5281/zenodo.23008933)
@@ -291,7 +291,7 @@ are not distributed.
 
 ## Citation
 
-If you use RAVEN or this code, please cite:
+For authorized uses, please cite RAVEN.
 
 ```bibtex
 @software{sun2026raven,
@@ -312,12 +312,9 @@ The paper describing the method will be linked here once it is publicly availabl
 
 ## License
 
-RAVEN is released under the [RAVEN Academic Non-Commercial License 1.0](LICENSE). In short: you may use and modify
-the code for non-commercial research and teaching; publications that use it must cite it; modified versions may
-not be redistributed without permission; commercial use requires a separate license; no patent rights are
-granted. This is not an OSI-approved open-source license. Parts of `raven/online/networks.py` are adapted from
-PyMARL and remain under the Apache License 2.0 (see [NOTICE](NOTICE)). For commercial licensing, please contact
-the authors through [GitHub](https://github.com/sswun).
+Starting with **v1.1.0**, contact the authors and obtain their **prior written permission** before using RAVEN's original code, figures or experimental results. This applies to academic research, teaching, replication, benchmarking and commercial use. [Permission terms](LICENSE) · [Contact the authors](https://github.com/sswun/RAVEN/issues/new)
+
+The earlier releases carry the RAVEN Academic Non-Commercial License 1.0. Their terms can be inspected in the [v1.0.0 snapshot](https://github.com/sswun/RAVEN/blob/RAVEN/LICENSE) and [v1.0.1 snapshot](https://github.com/sswun/RAVEN/blob/v1.0.1/LICENSE). The PyMARL-derived `RNNAgent` and `QMixer` code retains its Apache 2.0 license. [NOTICE](NOTICE) · [Apache License 2.0](licenses/Apache-2.0.txt)
 
 ## Acknowledgements
 

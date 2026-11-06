@@ -1,10 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "For authorized use, cite RAVEN as below. Contact the authors for prior written permission to use the original code or results."
 title: "RAVEN: Receiver-conditioned Action-Value ENcoding for Finite-Symbol Multi-Agent Communication"
 type: software
 repository-code: "https://github.com/sswun/RAVEN"
-version: 1.0.1
-date-released: 2026-09-28
+version: 1.1.0
+date-released: "2026-11-06"
+license-url: "https://github.com/sswun/RAVEN/blob/v1.1.0/LICENSE"
 authors:
   - family-names: Sun
     given-names: Shuwei

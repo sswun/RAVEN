@@ -1,7 +1,7 @@
 {
   "title": "RAVEN: Receiver-conditioned Action-Value ENcoding for Finite-Symbol Multi-Agent Communication",
   "upload_type": "software",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "creators": [
     {
       "name": "Sun, Shuwei",
@@ -29,7 +29,7 @@
       "orcid": "0000-0002-4985-0028"
     }
   ],
-  "description": "Reference implementation of RAVEN, a finite-symbol (K = 4, 2 bits per message) communication method for cooperative multi-agent reinforcement learning. A sender's symbol is chosen so that, in the receiver's own decision context, the receiver's centred action-value profile matches the one it would have with full information. The release contains the offline implementation (centralised teacher, sensitivity-weighted receiver conditions, exact codebook search, distilled sender and receivers) and the online implementation (GRU agents with QMIX, hard-symbol codec, top-2 sparse receiver, conditional value alignment loss), together with task adapters for ring and broadcast navigation, MPE2 and SMAC. Training data, experiment records and trained weights are not included. Licensed under the RAVEN Academic Non-Commercial License 1.0 (see the LICENSE file); not an open-source license.",
+  "description": "<p>Reference implementation of RAVEN, a finite-symbol (K = 4, 2 bits per message) communication method for cooperative multi-agent reinforcement learning. A sender's symbol is chosen so that, in the receiver's own decision context, the receiver's centred action-value profile matches the one it would have with full information. The release contains the offline implementation (centralised teacher, sensitivity-weighted receiver conditions, exact codebook search, distilled sender and receivers) and the online implementation (GRU agents with QMIX, hard-symbol codec, top-2 sparse receiver, conditional value alignment loss), together with task adapters for ring and broadcast navigation, MPE2 and SMAC. Training data, experiment records and trained weights are not included.</p><p>Starting with v1.1.0, the authors require prior written permission to use their original code, figures or experimental results, including for academic research and commercial use. See the <a href=\"https://github.com/sswun/RAVEN/blob/v1.1.0/LICENSE\">RAVEN Permission Terms</a> or <a href=\"https://github.com/sswun/RAVEN/issues/new\">contact the authors</a>. The PyMARL-derived portions identified in <a href=\"https://github.com/sswun/RAVEN/blob/v1.1.0/NOTICE\">NOTICE</a> retain their Apache 2.0 license. Earlier releases carry their own terms.</p>",
   "access_right": "open",
   "keywords": [
     "multi-agent reinforcement learning",
@@ -37,5 +37,6 @@
     "discrete communication",
     "value decomposition",
     "bandwidth-limited communication"
-  ]
+  ],
+  "license": "other-closed"
 }
